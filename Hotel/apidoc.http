@@ -1,0 +1,34 @@
+###
+POST http://127.0.0.1:8000/api/hotels/
+Content-Type: application/json
+
+{
+    "hotel_name": "Marriot Kochi",
+    "location": "Kochi",
+    "description": "A comfortable hotel in the city",
+    "room_type": "Deluxe",
+    "price_per_day": 4500,
+    "capacity": 2
+}
+
+###
+GET http://127.0.0.1:8000/api/hotels/
+
+###
+GET http://127.0.0.1:8000/api/hotels/1/
+
+###
+PUT http://127.0.0.1:8000/api/hotels/1/
+Content-Type: application/json
+
+{
+    "hotel_name": "Grand Hotel Kochi",
+    "location": "Ernakulam",
+    "description": "A luxury hotel in Kochi",
+    "room_type": "Deluxe",
+    "price_per_day": 2500,
+    "capacity": 3
+}
+
+###
+DELETE http://127.0.0.1:8000/api/hotels/1/
